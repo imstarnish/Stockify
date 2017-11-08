@@ -1,0 +1,443 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#navi{
+    background-color:white;
+    border: none;
+    box-shadow: 0px 6px 7px #888888;
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: blue;
+}
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .nav-item:visited .nav-link {
+    color: blue !important;
+    font-weight: 600;
+    outline: none;
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: darkblue !important;
+    font-size: 16.5px;
+}
+.navbar-custom .navbar-brand:hover{
+    color: darkblue !important;
+    font-size: 20.5px;
+}
+.modal-dialog {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+}
+@media(max-width: 768px) {
+  .modal-dialog {
+    min-height: calc(100vh - 20px);
+  }
+}
+.intro{
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.ph {
+  font-weight: 700;
+}
+.ph:after {
+  content: "for growing business.";
+  animation: change 6s linear infinite;
+  transition: color .1s ease;    
+}
+@keyframes change {
+  0% { content:"for growing business."; }
+  50% { content: "for small retailers."; }
+  100% { content: "for any business."; }
+}
+/*pricing table*/
+
+#price {
+  background-color: #f8f8f8;
+}
+.row-custom{
+    min-height: 100vh;
+}
+.card {
+  border: 0;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, .08);
+  transition: all .3s ease-in-out;
+  padding: 2.25rem 0;
+  position: relative;
+  will-change:transform; 
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #57e2b2;
+    transition: 0.5s;
+  }
+  &:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 20px 35px 0 rgba(0, 0, 0, .08);
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, .08);
+    
+    &:after {
+      width: 100%;
+    }
+    
+  }
+}
+   .card-header {
+    background-color: white;
+    padding-left: 2rem;
+    border-bottom: 0px;
+  }
+   .card-title {
+    margin-bottom: 1rem;
+  }
+   .card-block {
+    padding-top: 0;
+  }
+   .list-group-item {
+    border: 0px;
+    padding: .25rem;
+    color: #808080;
+    font-weight: 300;
+  }
+.display-2 {
+  font-size: 7rem;
+  letter-spacing: -.5rem;
+}
+   .currency {
+    font-size: 2.75rem;
+    position: relative;
+    font-weight: 400;
+    top: -45px;
+    letter-spacing: 0px;
+  }
+   .period {
+    font-size: 1rem;
+    color: lighten(#808080;, 20%);
+    letter-spacing: 0px;
+  }
+
+.btn-cus {
+  text-transform: uppercase;
+  font-size: .75rem;
+  font-weight: 500;
+  color: lighten(#808080, 15%);
+  border-radius: 0;
+  padding: .75rem 1.25rem;
+  letter-spacing: 1px;
+}
+
+.btn-gradient-cus { 
+  background-color: #f2f2f2;
+  transition: background .3s ease-in-out;
+  
+  &:hover {
+    color: white;
+    background-color: #57e2b2;
+  }
+}
+#pprice{
+    width: 100%;
+    height: 15%;
+    margin: 0;
+    padding-top: 20px;
+    background:linear-gradient(#57e2b2, white);
+}
+#footer{
+    padding: 100px;
+    background-color: lightgrey;
+}
+
+
+
+
+/*This is for pic with text*/
+#partition{
+    padding: 30px 0;
+    margin-top: 0px;
+}
+#partition.onee{
+    background: linear-gradient(white,white,#57e2b2);
+}
+#partition.twoo{
+    background: linear-gradient(#57e2b2,#57e2b2,white);
+
+}
+#partition2{
+    margin-top: 0px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.partition-one{
+    margin: auto auto;
+}
+.partition-two{
+    margin: auto auto;
+}
+
+.inside-partition-one{
+    text-align: center;
+    padding: 40px 80px 3px 80px;
+    font-family: 'Francois One', sans-serif;
+}
+
+.partition-image{
+    width: 100%;
+    padding: 0px;
+/*    padding: 3px 20px 3px 3px;*/
+}
+.inside-partition-one h1{
+    margin: auto auto;
+    font-size: 56px;
+    color: #253858;
+    padding-bottom: 40px;
+}
+.linevise p{
+    padding-left: 100px;
+    text-align: left;
+}
+
+.linevise h2{
+    text-align: center;
+    padding-top: 40px;
+    color: #66B2BF;
+}
+.progress{
+    width: 500px;
+    height: 400px;
+    margin: auto auto;
+}
+
+.inside-partition-one p{
+    letter-spacing: 4px;
+    font-size: 22px;
+    color: #7F7A7A;
+}
+.log{
+ box-shadow: 0 0px 65px #57e2b2;
+}
+/*this is for extra contents*/
+
+#extra-contents{
+    padding: 40px 0;
+    background-color: white;
+}
+#extra-contents h3{
+    width: 50%;
+    margin: 0 auto 50px;
+    padding-bottom: 20px;
+    font-size: 42px;
+    text-align: center;
+    border-bottom: solid 3px rgba(175,175,175,0.5);
+    color: #253858;
+}
+#content-row{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 30px 40px 50px;
+}
+
+.up{
+    padding-top: 10px;
+    border-top: solid 1px rgba(175,175,175,0.5);
+}
+.down{
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgba(215,215,215,0.5);
+}
+.right{
+        border-right: solid 2px rgba(215,215,215,0.5);
+}
+.left{
+        border-left: solid 2px rgba(215,215,215,0.5)
+}
+.row div h4{
+    color: dodgerblue;
+    padding: 4px 0 5px 0px;
+}
+.icon-images{
+    padding: 10px;
+}
+
+
+/*Toggle ios switch for signup*/
+.container1{
+	color:#4FD065;
+	font:32px 'Roboto', Arial, sans-serif;
+	width:400px;
+	margin:30px auto;
+	padding:40px 0;
+	text-align: center;
+}
+
+.holder{
+	width:56px;
+	margin:20px auto;
+	position:relative;
+}
+
+.check-ios{
+	visibility: hidden;
+}
+
+.holder span{
+	background-color:#e2e2e2;
+	display:block;
+	height:30px;
+	width:54px;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:1;	
+
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
+
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	        transition: all .5s ease;	
+}
+
+.holder span:after {
+	background-color:#fff;
+	content:'';
+	display:block;
+	height:28px;
+	width:52px;	
+	position: absolute;
+	top:1px;
+	left:1px;
+	z-index:2;
+
+	-webkit-border-radius: 14px;
+	   -moz-border-radius: 14px;
+	        border-radius: 14px;
+
+	-webkit-transition: all .4s ease;
+	   -moz-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	    -ms-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+
+
+.holder label{
+	background: #fff;
+	cursor: pointer;
+	display: block;
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	top:1px;
+	left:1px;
+	z-index:3;	
+
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+
+	-webkit-transition: all .4s ease;
+	   -moz-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	    -ms-transition: all .4s ease;
+	        transition: all .4s ease;
+
+	-webkit-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3);
+	   -moz-box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3);
+			box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.3);
+}
+
+.check-ios:checked ~ span {
+	background-color:#4FD065;
+}
+
+.check-ios:checked ~ span:after {
+	height:0;
+	width:0;
+	left:50%;
+	top:50%;
+}
+
+.check-ios:checked + label {
+	left: 25px;
+}
+#footlinks ul li a{
+    color: black;
+}
+#footl{
+    margin: 0;
+    padding: 0;
+}
+#footl li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+#footl li a:hover{
+    text-decoration: underline;
+}
+#footer{
+    padding-bottom: 8px;
+}
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein1 0.5s, fadeout1 0.5s 2.5s;
+    animation: fadein1 0.5s, fadeout1 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein1 {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein1 {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout1 {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout1 {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
